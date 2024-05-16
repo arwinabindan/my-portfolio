@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: black;
+        color: white; 
+      }
+
+      .card {
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .card-header {
+        background-color: #007bff;
+        color: white;
+        font-weight: bold;
+        border-bottom: none;
+      }
+
+      .form-control {
+        border-radius: 5px;
+      }
+
+      .btn-primary {
+        background-color: #007bff;
+        border: none;
+      }
+
+      .btn-primary:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Contact Form</div>
+            <div class="card-body">
+              <p>Register here!</p>
+              <form
+                method="post"
+                action=""
+              >
+                <div class="mb-3">
+                  <label for="first-name" class="form-label">Enter Your First Name:</label>
+                  <input
+                    id="first-name"
+                    name="first-name"
+                    type="text"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="last-name" class="form-label">Enter Your Last Name:</label>
+                  <input
+                    id="last-name"
+                    name="last-name"
+                    type="text"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Enter Your Email:</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="new-password" class="form-label">Create a New Password:</label>
+                  <input
+                    id="new-password"
+                    name="new-password"
+                    type="password"
+                    class="form-control"
+                    pattern="[a-z0-5]{8,}"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <legend class="form-label">Account type (required)</legend>
+                  <div class="form-check">
+                    <input
+                      id="personal-account"
+                      type="radio"
+                      name="account-type"
+                      class="form-check-input"
+                      checked
+                    />
+                    <label for="personal-account" class="form-check-label">Personal</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      id="business-account"
+                      type="radio"
+                      name="account-type"
+                      class="form-check-input"
+                    />
+                    <label for="business-account" class="form-check-label">Business</label>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="profile-picture" class="form-label">Upload a profile picture:</label>
+                  <input
+                    id="profile-picture"
+                    type="file"
+                    name="file"
+                    class="form-control"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="age" class="form-label"
+                    >Input your age (years):</label
+                  >
+                  <input
+                    id="age"
+                    type="number"
+                    name="age"
+                    min="13"
+                    max="120"
+                    class="form-control"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="referrer" class="form-label"
+                    >How did you hear about us?</label
+                  >
+                  <select id="referrer" name="referrer" class="form-select">
+                    <option value="">option</option></option>
+                    <option value="1">My Info</option>
+                    <option value="2">My Info</option>
+                    <option value="3">My Info</option>
+                    <option value="4">My Info</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="bio" class="form-label">Provide a bio:</label>
+                  <textarea
+                    id="bio"
+                    name="bio"
+                    rows="3"
+                    class="form-control"
+                    placeholder="I like coding on the beach..."
+                  ></textarea>
+                </div>
+                <div class="mb-3 form-check">
+                  <input
+                    id="terms-and-conditions"
+                    type="checkbox"
+                    required
+                    name="terms-and-conditions"
+                    class="form-check-input"
+                  />
+                  <label for="terms-and-conditions" class="form-check-label"
+                    >I accept the
+                    <a href="https://policies.google.com/terms?hl=en-US"
+                      >terms and conditions</a
+                    ></label
+                  >
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
